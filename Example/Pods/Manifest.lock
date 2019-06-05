@@ -1,0 +1,24 @@
+PODS:
+  - LEGOToast (0.1.0):
+    - Masonry
+  - Masonry (1.1.0)
+
+DEPENDENCIES:
+  - LEGOToast (from `../`)
+  - Masonry
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Masonry
+
+EXTERNAL SOURCES:
+  LEGOToast:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  LEGOToast: 2fe012c719edc5e232b5b0d48e7434a1c840aab8
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+
+PODFILE CHECKSUM: bd1e2c565472271274f787a72ed508a240a67cf7
+
+COCOAPODS: 1.6.1

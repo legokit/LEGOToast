@@ -1,0 +1,14 @@
+use_frameworks!
+
+platform :ios, '8.0'
+
+target 'LEGOToast_Example' do
+  pod 'LEGOToast', :path => '../'
+  pod 'Masonry'
+  
+  target 'LEGOToast_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

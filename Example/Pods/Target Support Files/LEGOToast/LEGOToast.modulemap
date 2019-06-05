@@ -1,0 +1,6 @@
+framework module LEGOToast {
+  umbrella header "LEGOToast-umbrella.h"
+
+  export *
+  module * { export * }
+}

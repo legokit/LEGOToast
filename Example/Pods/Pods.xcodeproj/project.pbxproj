@@ -1,0 +1,1078 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01FA705ED132EE8D02D23B95FD419CE7 /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 31BA2CDBF46DCD8CA514150C57E64824 /* MASConstraint.m */; };
+		0356E3003D5409CFCF2D41C16DBAF9DA /* LGProgressToastView.h in Headers */ = {isa = PBXBuildFile; fileRef = BEA486A8D4EA1EB349D1294360B3F542 /* LGProgressToastView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		04C0EB2805A2E6C2ECAAC6C27C180D0E /* MASLayoutConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = A0EE7F78B3BD7C286ECD8E89FBD08EA3 /* MASLayoutConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		152EE002B9FDF48152D08F1611D62C6B /* MASConstraintMaker.h in Headers */ = {isa = PBXBuildFile; fileRef = BA1930EA5A0D0E7DC87664879DB6D032 /* MASConstraintMaker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1A3230A1A9C06D047F5D6FBF740ED972 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 998D6634C115D4C55CB45C074E927E83 /* UIKit.framework */; };
+		241A5DE6CABDFB3499EB7B81518F264E /* MASViewAttribute.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EF30F780E2BD14DF24481BDC5498546 /* MASViewAttribute.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		29FE1644D4C1941C60A33CC733A22657 /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = F6FFE47506B20F92B135A335E50B6E9F /* MASViewConstraint.m */; };
+		3153BA2C67FC7738DA2F1F13BCAB9BF4 /* LEGOToast-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AD0D39713C056B46D222F35712B300E /* LEGOToast-dummy.m */; };
+		336E17757F7A422D63F132D7ECC861D0 /* View+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = CE1F404471E734FD2E91B9AA72EE50D7 /* View+MASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		33A1D360FAD1B41BA83DB2F117C220AE /* LGToastView.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A5E7D03AD451024C6C344D37A2574E7 /* LGToastView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3867176C7C2F7A778837A33B58CAE84F /* ViewController+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 02B4B23715DFE401486641D6284C1C47 /* ViewController+MASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3C4A2CE9AF2EEC68E94F7E0B40FA9071 /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DFD4286E9402BFCF1A5042CBA515863 /* MASLayoutConstraint.m */; };
+		40B7985AEB52B9965D53E5DA6F966125 /* NSArray+MASShorthandAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C6624EA0EDFA9F72CF6A18E889D0D25 /* NSArray+MASShorthandAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4E8CDD9E41A029B8D3F94D4A24917B7F /* View+MASShorthandAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 78526D2C8FDDA6A9A4034A969422E45B /* View+MASShorthandAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		57A062DD5CCE7D9F1638AFD78E187576 /* MASUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C6C501769E2DA3CE22CE4BA9B61BD90 /* MASUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5E218002405E8D1EFA116AEEF8BD6780 /* MASCompositeConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 3015FEEEE50C4FE51F845C11D4154A84 /* MASCompositeConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6186611E73F99AAE6123EA1D242E3491 /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BFB0B11795C1B40153A1A6792AD8430 /* MASViewAttribute.m */; };
+		6AE002C119667E1D6F2FAC7099F618A9 /* MASConstraint+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = B2E90708D5E58877A06F2A402BF8FC16 /* MASConstraint+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8D26674F73BA07282ABF56C08CA1B390 /* Masonry-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 266270F46FD6D8E798173DEC66BEECE4 /* Masonry-dummy.m */; };
+		94657F463D0D26FE1550F0F68D2ECBEE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5559CF883A4F2FF27FDED5EC5600A644 /* Foundation.framework */; };
+		980429C47059AAFE9A9C103F709D62A5 /* Pods-LEGOToast_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CF8BD61FBCD941C1533D1E351DB77610 /* Pods-LEGOToast_Tests-dummy.m */; };
+		9C2EC0C3A3BDC4349351E875EB98D634 /* NSLayoutConstraint+MASDebugAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 89286B607043EF52DC1580A838A8D2F4 /* NSLayoutConstraint+MASDebugAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9F285A3CDFED609934D3239EFCA97DEC /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 01FA2F422D817FCC200276FEE81A8466 /* NSArray+MASAdditions.m */; };
+		A079C855B1DB1F513C9C03A52833FA85 /* MASConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = EC6F744A3DA1C0EE12D10CB82411B05E /* MASConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A329F4579289394450C2CF04A9557B80 /* MASViewConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A25616029B4FC5676B044BBD02C54C2 /* MASViewConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A57EA4CBAAD458DDD5BAB1B07C3869F0 /* Pods-LEGOToast_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DF94F7E79C2719DB798DD7F766D318A /* Pods-LEGOToast_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AAA7F1EA1B7CB7E82004A8B6FE350BCD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5559CF883A4F2FF27FDED5EC5600A644 /* Foundation.framework */; };
+		B6D41A7EF57C9DA799E9353D597998DE /* Masonry.h in Headers */ = {isa = PBXBuildFile; fileRef = F4C7DE6E4FB2607791F1E38E82B0550F /* Masonry.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BCB8447A85D9FA8EB01C788C06A7A5A7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5559CF883A4F2FF27FDED5EC5600A644 /* Foundation.framework */; };
+		C1DB1A199D98C2DAEDA42C5B179D2132 /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 21C55901E770E7D3DF78180E0F7B2F4D /* MASCompositeConstraint.m */; };
+		C30A62F07DB4F6C8CC780E5EB4E7B9C8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5559CF883A4F2FF27FDED5EC5600A644 /* Foundation.framework */; };
+		C94B2B66CD98438C44E210009F9F73CD /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = D98729D388525C1741E1AF5083C0B910 /* MASConstraintMaker.m */; };
+		CD87886F2E1DB3331AA54CD1C87AA809 /* LGToastView.m in Sources */ = {isa = PBXBuildFile; fileRef = ABA6B2C9D0C9741DEC9CE9A6B7B5CBA6 /* LGToastView.m */; };
+		D307CC32D17C0002F4C8989CB3F77B30 /* NSArray+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = C1B818D35C86765A99363DC0270CC55E /* NSArray+MASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D60CE47D52E535D748C6949275956421 /* Masonry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A7EABDD1A158A7C17608EAD787A8CD9 /* Masonry.framework */; };
+		DB065D206D13C0B6614C77A6CC43DCF5 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F1F958E9E8CA5C5F1DD8F53FFAEDFDF /* View+MASAdditions.m */; };
+		EA4C069B8B8095D715E263BF2F47F7BB /* Pods-LEGOToast_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A02BEB6BB4E0AC94D60AF85F7684E206 /* Pods-LEGOToast_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EB8F3FC4815B59DB85387FF58D369743 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0487C2E59D05FB9BCF1F1600C8809C2B /* NSLayoutConstraint+MASDebugAdditions.m */; };
+		EDAC146AFD00A8080EB22AD590FB80B6 /* LGProgressToastView.m in Sources */ = {isa = PBXBuildFile; fileRef = 46368006E35C1BD288FD6F694ED9A60B /* LGProgressToastView.m */; };
+		EEA9709F205F2216A010309F50B47CE8 /* LEGOToast-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D86A590D8430030B88381ACC8DCBF586 /* LEGOToast-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F63234690D1C57DBB9C8C325C83AB6EB /* Pods-LEGOToast_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 617D9A83022EA021EBC1D5EAD6A3E26E /* Pods-LEGOToast_Example-dummy.m */; };
+		F6E42C5EFF648E86FDB94798D52F0A76 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C9B2014C24ADA03537F3B21DB6735E4 /* ViewController+MASAdditions.m */; };
+		F9F25403F1B9C2CA9ECD0EEF7BABEF19 /* Masonry-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E145DFF9033B5609061BCCC32A734C7 /* Masonry-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1DD77E3969CF578D26F8B2EAEA807980 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04E25709E09EB74CB237AFBD292D5DD9;
+			remoteInfo = LEGOToast;
+		};
+		2C840DF7E91FA926B78B2653C40DD316 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4DE67370833304C3112EEBC97A1EF870;
+			remoteInfo = Masonry;
+		};
+		326E97FCEDCCE28A9A5D9D0E42B08ABE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4DE67370833304C3112EEBC97A1EF870;
+			remoteInfo = Masonry;
+		};
+		6F81ED3BBD39BA51A91E8462429CC00B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7C13EBFD6FBBC0DBE8A18EEA48359688;
+			remoteInfo = "Pods-LEGOToast_Example";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01FA2F422D817FCC200276FEE81A8466 /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+MASAdditions.m"; path = "Masonry/NSArray+MASAdditions.m"; sourceTree = "<group>"; };
+		02B4B23715DFE401486641D6284C1C47 /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ViewController+MASAdditions.h"; path = "Masonry/ViewController+MASAdditions.h"; sourceTree = "<group>"; };
+		0487C2E59D05FB9BCF1F1600C8809C2B /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSLayoutConstraint+MASDebugAdditions.m"; path = "Masonry/NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
+		0CEB14B776B64C981C61CA0C3176BAC6 /* Pods-LEGOToast_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LEGOToast_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		0DF94F7E79C2719DB798DD7F766D318A /* Pods-LEGOToast_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LEGOToast_Example-umbrella.h"; sourceTree = "<group>"; };
+		1085DB28D68D2D40CAB1BE8B27EF375F /* Pods-LEGOToast_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LEGOToast_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		1679DBFF3656A2503FFD85C146B894EB /* Pods-LEGOToast_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LEGOToast_Example.release.xcconfig"; sourceTree = "<group>"; };
+		1BEE9C144D74F6AA05AAAC795B5B76D3 /* LEGOToast.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = LEGOToast.modulemap; sourceTree = "<group>"; };
+		1BFB0B11795C1B40153A1A6792AD8430 /* MASViewAttribute.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASViewAttribute.m; path = Masonry/MASViewAttribute.m; sourceTree = "<group>"; };
+		1C336D5AE7697F944C87858C96821D7B /* Pods-LEGOToast_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LEGOToast_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		21C55901E770E7D3DF78180E0F7B2F4D /* MASCompositeConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASCompositeConstraint.m; path = Masonry/MASCompositeConstraint.m; sourceTree = "<group>"; };
+		22800647CE7861D87A7431B5F6DE5B89 /* Pods-LEGOToast_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LEGOToast_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		266270F46FD6D8E798173DEC66BEECE4 /* Masonry-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Masonry-dummy.m"; sourceTree = "<group>"; };
+		27F31DAC5EC3FD656A3241884CF00276 /* Pods_LEGOToast_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LEGOToast_Tests.framework; path = "Pods-LEGOToast_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A25616029B4FC5676B044BBD02C54C2 /* MASViewConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASViewConstraint.h; path = Masonry/MASViewConstraint.h; sourceTree = "<group>"; };
+		2A5E7D03AD451024C6C344D37A2574E7 /* LGToastView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LGToastView.h; path = LEGOToast/Classes/LGToastView.h; sourceTree = "<group>"; };
+		2A7EABDD1A158A7C17608EAD787A8CD9 /* Masonry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Masonry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B26A2820B02026DA00662B755D5F156 /* LEGOToast.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = LEGOToast.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		2E9C3CD0C87A4BC046B80B3F1A6939B1 /* Masonry.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Masonry.xcconfig; sourceTree = "<group>"; };
+		2F1F958E9E8CA5C5F1DD8F53FFAEDFDF /* View+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "View+MASAdditions.m"; path = "Masonry/View+MASAdditions.m"; sourceTree = "<group>"; };
+		3015FEEEE50C4FE51F845C11D4154A84 /* MASCompositeConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASCompositeConstraint.h; path = Masonry/MASCompositeConstraint.h; sourceTree = "<group>"; };
+		31BA2CDBF46DCD8CA514150C57E64824 /* MASConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASConstraint.m; path = Masonry/MASConstraint.m; sourceTree = "<group>"; };
+		356E93D46262B4810DBF1F3D0EFA144E /* Pods-LEGOToast_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LEGOToast_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		3D103D360CCB49EC83DCDC31184DC5DD /* Pods-LEGOToast_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LEGOToast_Example-Info.plist"; sourceTree = "<group>"; };
+		43BA56A061873718EC06171526FE1A00 /* Masonry-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Masonry-prefix.pch"; sourceTree = "<group>"; };
+		46368006E35C1BD288FD6F694ED9A60B /* LGProgressToastView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LGProgressToastView.m; path = LEGOToast/Classes/LGProgressToastView.m; sourceTree = "<group>"; };
+		4C9B2014C24ADA03537F3B21DB6735E4 /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ViewController+MASAdditions.m"; path = "Masonry/ViewController+MASAdditions.m"; sourceTree = "<group>"; };
+		5559CF883A4F2FF27FDED5EC5600A644 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		5C6C501769E2DA3CE22CE4BA9B61BD90 /* MASUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASUtilities.h; path = Masonry/MASUtilities.h; sourceTree = "<group>"; };
+		5D9947C4949AD45BDA1277E9E0F0B247 /* Pods-LEGOToast_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LEGOToast_Tests-Info.plist"; sourceTree = "<group>"; };
+		617D9A83022EA021EBC1D5EAD6A3E26E /* Pods-LEGOToast_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LEGOToast_Example-dummy.m"; sourceTree = "<group>"; };
+		6AD0D39713C056B46D222F35712B300E /* LEGOToast-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LEGOToast-dummy.m"; sourceTree = "<group>"; };
+		6C6624EA0EDFA9F72CF6A18E889D0D25 /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MASShorthandAdditions.h"; path = "Masonry/NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		76015FDF3E5D5008269B47EA9D0E7823 /* Pods-LEGOToast_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LEGOToast_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		78526D2C8FDDA6A9A4034A969422E45B /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "View+MASShorthandAdditions.h"; path = "Masonry/View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		7E145DFF9033B5609061BCCC32A734C7 /* Masonry-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Masonry-umbrella.h"; sourceTree = "<group>"; };
+		84B27C8940AFE58AE1F0853570A40C2D /* LEGOToast-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LEGOToast-prefix.pch"; sourceTree = "<group>"; };
+		86967CBEEF61F3E0FB9FAC4B7E33338A /* Pods-LEGOToast_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LEGOToast_Example-frameworks.sh"; sourceTree = "<group>"; };
+		89286B607043EF52DC1580A838A8D2F4 /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSLayoutConstraint+MASDebugAdditions.h"; path = "Masonry/NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
+		8D0557698AC7A6FC9B6E9B16113487CD /* LEGOToast-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "LEGOToast-Info.plist"; sourceTree = "<group>"; };
+		8DD4D98006603750CDFC410AC2109ABA /* LEGOToast.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = LEGOToast.framework; path = LEGOToast.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8EF30F780E2BD14DF24481BDC5498546 /* MASViewAttribute.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASViewAttribute.h; path = Masonry/MASViewAttribute.h; sourceTree = "<group>"; };
+		998D6634C115D4C55CB45C074E927E83 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		9C8DF21257A533DEAD59E72A55D98F67 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		9CFC7114A78D3AD3E4BDD1E54871F701 /* Pods-LEGOToast_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LEGOToast_Tests.modulemap"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9DFD4286E9402BFCF1A5042CBA515863 /* MASLayoutConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASLayoutConstraint.m; path = Masonry/MASLayoutConstraint.m; sourceTree = "<group>"; };
+		A02BEB6BB4E0AC94D60AF85F7684E206 /* Pods-LEGOToast_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LEGOToast_Tests-umbrella.h"; sourceTree = "<group>"; };
+		A0EE7F78B3BD7C286ECD8E89FBD08EA3 /* MASLayoutConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASLayoutConstraint.h; path = Masonry/MASLayoutConstraint.h; sourceTree = "<group>"; };
+		A27D623DD8DAACFE89E371501A2C6560 /* Pods-LEGOToast_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LEGOToast_Example.modulemap"; sourceTree = "<group>"; };
+		A3EC0121FDBC530599046D1A12C9E879 /* Masonry.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Masonry.modulemap; sourceTree = "<group>"; };
+		ABA6B2C9D0C9741DEC9CE9A6B7B5CBA6 /* LGToastView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LGToastView.m; path = LEGOToast/Classes/LGToastView.m; sourceTree = "<group>"; };
+		B2E90708D5E58877A06F2A402BF8FC16 /* MASConstraint+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MASConstraint+Private.h"; path = "Masonry/MASConstraint+Private.h"; sourceTree = "<group>"; };
+		BA1930EA5A0D0E7DC87664879DB6D032 /* MASConstraintMaker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASConstraintMaker.h; path = Masonry/MASConstraintMaker.h; sourceTree = "<group>"; };
+		BB6227AD9A5CB544F9639A16F5DCDF8E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		BEA486A8D4EA1EB349D1294360B3F542 /* LGProgressToastView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LGProgressToastView.h; path = LEGOToast/Classes/LGProgressToastView.h; sourceTree = "<group>"; };
+		BEE05198A26823A3044DA42B7D1EDB08 /* Pods_LEGOToast_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LEGOToast_Example.framework; path = "Pods-LEGOToast_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1B818D35C86765A99363DC0270CC55E /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MASAdditions.h"; path = "Masonry/NSArray+MASAdditions.h"; sourceTree = "<group>"; };
+		C93B97699DF8BA84711635EC820BE055 /* LEGOToast.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LEGOToast.xcconfig; sourceTree = "<group>"; };
+		CE1F404471E734FD2E91B9AA72EE50D7 /* View+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "View+MASAdditions.h"; path = "Masonry/View+MASAdditions.h"; sourceTree = "<group>"; };
+		CF8BD61FBCD941C1533D1E351DB77610 /* Pods-LEGOToast_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LEGOToast_Tests-dummy.m"; sourceTree = "<group>"; };
+		D3CBAF14A558F767B552A6C4F17560AB /* Pods-LEGOToast_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LEGOToast_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		D86A590D8430030B88381ACC8DCBF586 /* LEGOToast-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LEGOToast-umbrella.h"; sourceTree = "<group>"; };
+		D98729D388525C1741E1AF5083C0B910 /* MASConstraintMaker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASConstraintMaker.m; path = Masonry/MASConstraintMaker.m; sourceTree = "<group>"; };
+		EBB92ED188A723CA233CFE13229E0663 /* Masonry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Masonry.framework; path = Masonry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC6F744A3DA1C0EE12D10CB82411B05E /* MASConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASConstraint.h; path = Masonry/MASConstraint.h; sourceTree = "<group>"; };
+		F4C7DE6E4FB2607791F1E38E82B0550F /* Masonry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Masonry.h; path = Masonry/Masonry.h; sourceTree = "<group>"; };
+		F6FFE47506B20F92B135A335E50B6E9F /* MASViewConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASViewConstraint.m; path = Masonry/MASViewConstraint.m; sourceTree = "<group>"; };
+		F82B234F4F5BFC90ADFC13F2FCF6192E /* Masonry-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Masonry-Info.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		227FCF7A6BD941D13FF057AA2301BADB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C30A62F07DB4F6C8CC780E5EB4E7B9C8 /* Foundation.framework in Frameworks */,
+				1A3230A1A9C06D047F5D6FBF740ED972 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23FA58B2E7BD7E9F88D7809FA900ECF2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94657F463D0D26FE1550F0F68D2ECBEE /* Foundation.framework in Frameworks */,
+				D60CE47D52E535D748C6949275956421 /* Masonry.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35CB081B927169C417651B07B84066B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCB8447A85D9FA8EB01C788C06A7A5A7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82DB56ED66FA689C8C1B56F2F3A28826 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAA7F1EA1B7CB7E82004A8B6FE350BCD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0D6229D48F0C56E0F3BF53F26C4E330A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8DD4D98006603750CDFC410AC2109ABA /* LEGOToast.framework */,
+				EBB92ED188A723CA233CFE13229E0663 /* Masonry.framework */,
+				BEE05198A26823A3044DA42B7D1EDB08 /* Pods_LEGOToast_Example.framework */,
+				27F31DAC5EC3FD656A3241884CF00276 /* Pods_LEGOToast_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0F5D8FF82000FBB765D6E1F689C1D6B9 /* Pods-LEGOToast_Example */ = {
+			isa = PBXGroup;
+			children = (
+				A27D623DD8DAACFE89E371501A2C6560 /* Pods-LEGOToast_Example.modulemap */,
+				1085DB28D68D2D40CAB1BE8B27EF375F /* Pods-LEGOToast_Example-acknowledgements.markdown */,
+				22800647CE7861D87A7431B5F6DE5B89 /* Pods-LEGOToast_Example-acknowledgements.plist */,
+				617D9A83022EA021EBC1D5EAD6A3E26E /* Pods-LEGOToast_Example-dummy.m */,
+				86967CBEEF61F3E0FB9FAC4B7E33338A /* Pods-LEGOToast_Example-frameworks.sh */,
+				3D103D360CCB49EC83DCDC31184DC5DD /* Pods-LEGOToast_Example-Info.plist */,
+				0DF94F7E79C2719DB798DD7F766D318A /* Pods-LEGOToast_Example-umbrella.h */,
+				356E93D46262B4810DBF1F3D0EFA144E /* Pods-LEGOToast_Example.debug.xcconfig */,
+				1679DBFF3656A2503FFD85C146B894EB /* Pods-LEGOToast_Example.release.xcconfig */,
+			);
+			name = "Pods-LEGOToast_Example";
+			path = "Target Support Files/Pods-LEGOToast_Example";
+			sourceTree = "<group>";
+		};
+		2F3DF5D181636AD77EADB3786873A4A6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2A7EABDD1A158A7C17608EAD787A8CD9 /* Masonry.framework */,
+				BAB1927D5856490F580749F4EDD29010 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		32A5EB87EE6CBB981F3145546E7F9963 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1BEE9C144D74F6AA05AAAC795B5B76D3 /* LEGOToast.modulemap */,
+				C93B97699DF8BA84711635EC820BE055 /* LEGOToast.xcconfig */,
+				6AD0D39713C056B46D222F35712B300E /* LEGOToast-dummy.m */,
+				8D0557698AC7A6FC9B6E9B16113487CD /* LEGOToast-Info.plist */,
+				84B27C8940AFE58AE1F0853570A40C2D /* LEGOToast-prefix.pch */,
+				D86A590D8430030B88381ACC8DCBF586 /* LEGOToast-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/LEGOToast";
+			sourceTree = "<group>";
+		};
+		3383BD59F0CA45F38B2C4285AD319AC1 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A3EC0121FDBC530599046D1A12C9E879 /* Masonry.modulemap */,
+				2E9C3CD0C87A4BC046B80B3F1A6939B1 /* Masonry.xcconfig */,
+				266270F46FD6D8E798173DEC66BEECE4 /* Masonry-dummy.m */,
+				F82B234F4F5BFC90ADFC13F2FCF6192E /* Masonry-Info.plist */,
+				43BA56A061873718EC06171526FE1A00 /* Masonry-prefix.pch */,
+				7E145DFF9033B5609061BCCC32A734C7 /* Masonry-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Masonry";
+			sourceTree = "<group>";
+		};
+		7529FD53BCE26816CCD46658378AAF1B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8E50BF0E4E86F38E1773098A5EDB39F2 /* Masonry */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		77BD6E00C5E51A5496B027F97E425186 /* LEGOToast */ = {
+			isa = PBXGroup;
+			children = (
+				BEA486A8D4EA1EB349D1294360B3F542 /* LGProgressToastView.h */,
+				46368006E35C1BD288FD6F694ED9A60B /* LGProgressToastView.m */,
+				2A5E7D03AD451024C6C344D37A2574E7 /* LGToastView.h */,
+				ABA6B2C9D0C9741DEC9CE9A6B7B5CBA6 /* LGToastView.m */,
+				BBF876E807D694AC5CCE398E56F565DD /* Pod */,
+				32A5EB87EE6CBB981F3145546E7F9963 /* Support Files */,
+			);
+			name = LEGOToast;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		8E50BF0E4E86F38E1773098A5EDB39F2 /* Masonry */ = {
+			isa = PBXGroup;
+			children = (
+				3015FEEEE50C4FE51F845C11D4154A84 /* MASCompositeConstraint.h */,
+				21C55901E770E7D3DF78180E0F7B2F4D /* MASCompositeConstraint.m */,
+				EC6F744A3DA1C0EE12D10CB82411B05E /* MASConstraint.h */,
+				31BA2CDBF46DCD8CA514150C57E64824 /* MASConstraint.m */,
+				B2E90708D5E58877A06F2A402BF8FC16 /* MASConstraint+Private.h */,
+				BA1930EA5A0D0E7DC87664879DB6D032 /* MASConstraintMaker.h */,
+				D98729D388525C1741E1AF5083C0B910 /* MASConstraintMaker.m */,
+				A0EE7F78B3BD7C286ECD8E89FBD08EA3 /* MASLayoutConstraint.h */,
+				9DFD4286E9402BFCF1A5042CBA515863 /* MASLayoutConstraint.m */,
+				F4C7DE6E4FB2607791F1E38E82B0550F /* Masonry.h */,
+				5C6C501769E2DA3CE22CE4BA9B61BD90 /* MASUtilities.h */,
+				8EF30F780E2BD14DF24481BDC5498546 /* MASViewAttribute.h */,
+				1BFB0B11795C1B40153A1A6792AD8430 /* MASViewAttribute.m */,
+				2A25616029B4FC5676B044BBD02C54C2 /* MASViewConstraint.h */,
+				F6FFE47506B20F92B135A335E50B6E9F /* MASViewConstraint.m */,
+				C1B818D35C86765A99363DC0270CC55E /* NSArray+MASAdditions.h */,
+				01FA2F422D817FCC200276FEE81A8466 /* NSArray+MASAdditions.m */,
+				6C6624EA0EDFA9F72CF6A18E889D0D25 /* NSArray+MASShorthandAdditions.h */,
+				89286B607043EF52DC1580A838A8D2F4 /* NSLayoutConstraint+MASDebugAdditions.h */,
+				0487C2E59D05FB9BCF1F1600C8809C2B /* NSLayoutConstraint+MASDebugAdditions.m */,
+				CE1F404471E734FD2E91B9AA72EE50D7 /* View+MASAdditions.h */,
+				2F1F958E9E8CA5C5F1DD8F53FFAEDFDF /* View+MASAdditions.m */,
+				78526D2C8FDDA6A9A4034A969422E45B /* View+MASShorthandAdditions.h */,
+				02B4B23715DFE401486641D6284C1C47 /* ViewController+MASAdditions.h */,
+				4C9B2014C24ADA03537F3B21DB6735E4 /* ViewController+MASAdditions.m */,
+				3383BD59F0CA45F38B2C4285AD319AC1 /* Support Files */,
+			);
+			name = Masonry;
+			path = Masonry;
+			sourceTree = "<group>";
+		};
+		8F881A04FB0362FC6DC79AF8DEF90AD7 /* Pods-LEGOToast_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				9CFC7114A78D3AD3E4BDD1E54871F701 /* Pods-LEGOToast_Tests.modulemap */,
+				1C336D5AE7697F944C87858C96821D7B /* Pods-LEGOToast_Tests-acknowledgements.markdown */,
+				D3CBAF14A558F767B552A6C4F17560AB /* Pods-LEGOToast_Tests-acknowledgements.plist */,
+				CF8BD61FBCD941C1533D1E351DB77610 /* Pods-LEGOToast_Tests-dummy.m */,
+				5D9947C4949AD45BDA1277E9E0F0B247 /* Pods-LEGOToast_Tests-Info.plist */,
+				A02BEB6BB4E0AC94D60AF85F7684E206 /* Pods-LEGOToast_Tests-umbrella.h */,
+				76015FDF3E5D5008269B47EA9D0E7823 /* Pods-LEGOToast_Tests.debug.xcconfig */,
+				0CEB14B776B64C981C61CA0C3176BAC6 /* Pods-LEGOToast_Tests.release.xcconfig */,
+			);
+			name = "Pods-LEGOToast_Tests";
+			path = "Target Support Files/Pods-LEGOToast_Tests";
+			sourceTree = "<group>";
+		};
+		B6494C40AD090BCAA1E2D50ED5CCCF61 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				77BD6E00C5E51A5496B027F97E425186 /* LEGOToast */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		BAB1927D5856490F580749F4EDD29010 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				5559CF883A4F2FF27FDED5EC5600A644 /* Foundation.framework */,
+				998D6634C115D4C55CB45C074E927E83 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		BBF876E807D694AC5CCE398E56F565DD /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				2B26A2820B02026DA00662B755D5F156 /* LEGOToast.podspec */,
+				BB6227AD9A5CB544F9639A16F5DCDF8E /* LICENSE */,
+				9C8DF21257A533DEAD59E72A55D98F67 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		CA68CE6EDBEA6A812EA416FF6AACD5BC /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0F5D8FF82000FBB765D6E1F689C1D6B9 /* Pods-LEGOToast_Example */,
+				8F881A04FB0362FC6DC79AF8DEF90AD7 /* Pods-LEGOToast_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				B6494C40AD090BCAA1E2D50ED5CCCF61 /* Development Pods */,
+				2F3DF5D181636AD77EADB3786873A4A6 /* Frameworks */,
+				7529FD53BCE26816CCD46658378AAF1B /* Pods */,
+				0D6229D48F0C56E0F3BF53F26C4E330A /* Products */,
+				CA68CE6EDBEA6A812EA416FF6AACD5BC /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1D9A827C9B1467BE3DF02092A144DBD2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEA9709F205F2216A010309F50B47CE8 /* LEGOToast-umbrella.h in Headers */,
+				0356E3003D5409CFCF2D41C16DBAF9DA /* LGProgressToastView.h in Headers */,
+				33A1D360FAD1B41BA83DB2F117C220AE /* LGToastView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B18E9636077ECA11840A89A458E4F78 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA4C069B8B8095D715E263BF2F47F7BB /* Pods-LEGOToast_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E9FEB7633A5D0073B60CE4705DEE3F9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A57EA4CBAAD458DDD5BAB1B07C3869F0 /* Pods-LEGOToast_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0F86B953DF7E103851AEA025BC0B6A8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E218002405E8D1EFA116AEEF8BD6780 /* MASCompositeConstraint.h in Headers */,
+				6AE002C119667E1D6F2FAC7099F618A9 /* MASConstraint+Private.h in Headers */,
+				A079C855B1DB1F513C9C03A52833FA85 /* MASConstraint.h in Headers */,
+				152EE002B9FDF48152D08F1611D62C6B /* MASConstraintMaker.h in Headers */,
+				04C0EB2805A2E6C2ECAAC6C27C180D0E /* MASLayoutConstraint.h in Headers */,
+				F9F25403F1B9C2CA9ECD0EEF7BABEF19 /* Masonry-umbrella.h in Headers */,
+				B6D41A7EF57C9DA799E9353D597998DE /* Masonry.h in Headers */,
+				57A062DD5CCE7D9F1638AFD78E187576 /* MASUtilities.h in Headers */,
+				241A5DE6CABDFB3499EB7B81518F264E /* MASViewAttribute.h in Headers */,
+				A329F4579289394450C2CF04A9557B80 /* MASViewConstraint.h in Headers */,
+				D307CC32D17C0002F4C8989CB3F77B30 /* NSArray+MASAdditions.h in Headers */,
+				40B7985AEB52B9965D53E5DA6F966125 /* NSArray+MASShorthandAdditions.h in Headers */,
+				9C2EC0C3A3BDC4349351E875EB98D634 /* NSLayoutConstraint+MASDebugAdditions.h in Headers */,
+				336E17757F7A422D63F132D7ECC861D0 /* View+MASAdditions.h in Headers */,
+				4E8CDD9E41A029B8D3F94D4A24917B7F /* View+MASShorthandAdditions.h in Headers */,
+				3867176C7C2F7A778837A33B58CAE84F /* ViewController+MASAdditions.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		04E25709E09EB74CB237AFBD292D5DD9 /* LEGOToast */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E4CBB73AAC943F645E7FB65A18E05F38 /* Build configuration list for PBXNativeTarget "LEGOToast" */;
+			buildPhases = (
+				1D9A827C9B1467BE3DF02092A144DBD2 /* Headers */,
+				CFA4C72DC943ACE2D3C54C2B9EC6A1AE /* Sources */,
+				23FA58B2E7BD7E9F88D7809FA900ECF2 /* Frameworks */,
+				DE9730F2A8A2C12639AEAAFB5D5CB129 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				88B908BB23FAE7FDCF39718C712C185C /* PBXTargetDependency */,
+			);
+			name = LEGOToast;
+			productName = LEGOToast;
+			productReference = 8DD4D98006603750CDFC410AC2109ABA /* LEGOToast.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		4DE67370833304C3112EEBC97A1EF870 /* Masonry */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E3B090CFF2ED973D8E8489D30411B4B /* Build configuration list for PBXNativeTarget "Masonry" */;
+			buildPhases = (
+				E0F86B953DF7E103851AEA025BC0B6A8 /* Headers */,
+				0CA43CF53A116265B997773E73E541FB /* Sources */,
+				227FCF7A6BD941D13FF057AA2301BADB /* Frameworks */,
+				C236717072C8B96B5E94AD1DF6466F46 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Masonry;
+			productName = Masonry;
+			productReference = EBB92ED188A723CA233CFE13229E0663 /* Masonry.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7C13EBFD6FBBC0DBE8A18EEA48359688 /* Pods-LEGOToast_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C33BBDFCE5DC4FBD78EEAF297458E7F /* Build configuration list for PBXNativeTarget "Pods-LEGOToast_Example" */;
+			buildPhases = (
+				5E9FEB7633A5D0073B60CE4705DEE3F9 /* Headers */,
+				12F87A1374396BC17B2BCC3ECE9C2E5F /* Sources */,
+				82DB56ED66FA689C8C1B56F2F3A28826 /* Frameworks */,
+				6211ECD3628F9D522957CE8A96205256 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4D4A8BF8DB37C110D7208894BA3B59E9 /* PBXTargetDependency */,
+				FBB7F113B3E11E066056B159FC4D63E8 /* PBXTargetDependency */,
+			);
+			name = "Pods-LEGOToast_Example";
+			productName = "Pods-LEGOToast_Example";
+			productReference = BEE05198A26823A3044DA42B7D1EDB08 /* Pods_LEGOToast_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D0D43FE21C7CB4EFF5CA5CF36DE9205B /* Pods-LEGOToast_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5574170C20D85947E4D096E27F2FEC9A /* Build configuration list for PBXNativeTarget "Pods-LEGOToast_Tests" */;
+			buildPhases = (
+				4B18E9636077ECA11840A89A458E4F78 /* Headers */,
+				4B2549BDA0D52D507CA1BEC56675DB36 /* Sources */,
+				35CB081B927169C417651B07B84066B8 /* Frameworks */,
+				DB3DAC428CECCA4CBF6A457A1E4DA62E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CCE152AE60E6249491CBF57928DA8F9A /* PBXTargetDependency */,
+			);
+			name = "Pods-LEGOToast_Tests";
+			productName = "Pods-LEGOToast_Tests";
+			productReference = 27F31DAC5EC3FD656A3241884CF00276 /* Pods_LEGOToast_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 0D6229D48F0C56E0F3BF53F26C4E330A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				04E25709E09EB74CB237AFBD292D5DD9 /* LEGOToast */,
+				4DE67370833304C3112EEBC97A1EF870 /* Masonry */,
+				7C13EBFD6FBBC0DBE8A18EEA48359688 /* Pods-LEGOToast_Example */,
+				D0D43FE21C7CB4EFF5CA5CF36DE9205B /* Pods-LEGOToast_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6211ECD3628F9D522957CE8A96205256 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C236717072C8B96B5E94AD1DF6466F46 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB3DAC428CECCA4CBF6A457A1E4DA62E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE9730F2A8A2C12639AEAAFB5D5CB129 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0CA43CF53A116265B997773E73E541FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1DB1A199D98C2DAEDA42C5B179D2132 /* MASCompositeConstraint.m in Sources */,
+				01FA705ED132EE8D02D23B95FD419CE7 /* MASConstraint.m in Sources */,
+				C94B2B66CD98438C44E210009F9F73CD /* MASConstraintMaker.m in Sources */,
+				3C4A2CE9AF2EEC68E94F7E0B40FA9071 /* MASLayoutConstraint.m in Sources */,
+				8D26674F73BA07282ABF56C08CA1B390 /* Masonry-dummy.m in Sources */,
+				6186611E73F99AAE6123EA1D242E3491 /* MASViewAttribute.m in Sources */,
+				29FE1644D4C1941C60A33CC733A22657 /* MASViewConstraint.m in Sources */,
+				9F285A3CDFED609934D3239EFCA97DEC /* NSArray+MASAdditions.m in Sources */,
+				EB8F3FC4815B59DB85387FF58D369743 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				DB065D206D13C0B6614C77A6CC43DCF5 /* View+MASAdditions.m in Sources */,
+				F6E42C5EFF648E86FDB94798D52F0A76 /* ViewController+MASAdditions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12F87A1374396BC17B2BCC3ECE9C2E5F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F63234690D1C57DBB9C8C325C83AB6EB /* Pods-LEGOToast_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B2549BDA0D52D507CA1BEC56675DB36 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				980429C47059AAFE9A9C103F709D62A5 /* Pods-LEGOToast_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFA4C72DC943ACE2D3C54C2B9EC6A1AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3153BA2C67FC7738DA2F1F13BCAB9BF4 /* LEGOToast-dummy.m in Sources */,
+				EDAC146AFD00A8080EB22AD590FB80B6 /* LGProgressToastView.m in Sources */,
+				CD87886F2E1DB3331AA54CD1C87AA809 /* LGToastView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4D4A8BF8DB37C110D7208894BA3B59E9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LEGOToast;
+			target = 04E25709E09EB74CB237AFBD292D5DD9 /* LEGOToast */;
+			targetProxy = 1DD77E3969CF578D26F8B2EAEA807980 /* PBXContainerItemProxy */;
+		};
+		88B908BB23FAE7FDCF39718C712C185C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Masonry;
+			target = 4DE67370833304C3112EEBC97A1EF870 /* Masonry */;
+			targetProxy = 2C840DF7E91FA926B78B2653C40DD316 /* PBXContainerItemProxy */;
+		};
+		CCE152AE60E6249491CBF57928DA8F9A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-LEGOToast_Example";
+			target = 7C13EBFD6FBBC0DBE8A18EEA48359688 /* Pods-LEGOToast_Example */;
+			targetProxy = 6F81ED3BBD39BA51A91E8462429CC00B /* PBXContainerItemProxy */;
+		};
+		FBB7F113B3E11E066056B159FC4D63E8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Masonry;
+			target = 4DE67370833304C3112EEBC97A1EF870 /* Masonry */;
+			targetProxy = 326E97FCEDCCE28A9A5D9D0E42B08ABE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		05DF210AC65EBB0E593AAF976B2C2177 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		2EA1FE980154BB79F3FB05B2133A6BEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76015FDF3E5D5008269B47EA9D0E7823 /* Pods-LEGOToast_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LEGOToast_Tests/Pods-LEGOToast_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LEGOToast_Tests/Pods-LEGOToast_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		421ECB1396280A8D83853C3DDBED1700 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		7AEC391A09E1D8ABA110D3548C38D459 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C93B97699DF8BA84711635EC820BE055 /* LEGOToast.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/LEGOToast/LEGOToast-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LEGOToast/LEGOToast-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LEGOToast/LEGOToast.modulemap";
+				PRODUCT_MODULE_NAME = LEGOToast;
+				PRODUCT_NAME = LEGOToast;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		87A0F3407EB9434F56B4987533558F84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0CEB14B776B64C981C61CA0C3176BAC6 /* Pods-LEGOToast_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LEGOToast_Tests/Pods-LEGOToast_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LEGOToast_Tests/Pods-LEGOToast_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8BC7D3562C484B5D0E87DFB6C2126324 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 356E93D46262B4810DBF1F3D0EFA144E /* Pods-LEGOToast_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LEGOToast_Example/Pods-LEGOToast_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LEGOToast_Example/Pods-LEGOToast_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A474BFFA5A1AF09CCB295541F5869F44 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C93B97699DF8BA84711635EC820BE055 /* LEGOToast.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/LEGOToast/LEGOToast-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LEGOToast/LEGOToast-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LEGOToast/LEGOToast.modulemap";
+				PRODUCT_MODULE_NAME = LEGOToast;
+				PRODUCT_NAME = LEGOToast;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BEA1D99B7557B530C169B1AA2AC8C8C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E9C3CD0C87A4BC046B80B3F1A6939B1 /* Masonry.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Masonry/Masonry-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Masonry/Masonry-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Masonry/Masonry.modulemap";
+				PRODUCT_MODULE_NAME = Masonry;
+				PRODUCT_NAME = Masonry;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E25328AB5C27E2BFED5DB79FE4F58021 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E9C3CD0C87A4BC046B80B3F1A6939B1 /* Masonry.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Masonry/Masonry-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Masonry/Masonry-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Masonry/Masonry.modulemap";
+				PRODUCT_MODULE_NAME = Masonry;
+				PRODUCT_NAME = Masonry;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F18BD88B4896E96EF28BB06CEE7F3C5E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1679DBFF3656A2503FFD85C146B894EB /* Pods-LEGOToast_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LEGOToast_Example/Pods-LEGOToast_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LEGOToast_Example/Pods-LEGOToast_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2C33BBDFCE5DC4FBD78EEAF297458E7F /* Build configuration list for PBXNativeTarget "Pods-LEGOToast_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BC7D3562C484B5D0E87DFB6C2126324 /* Debug */,
+				F18BD88B4896E96EF28BB06CEE7F3C5E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				421ECB1396280A8D83853C3DDBED1700 /* Debug */,
+				05DF210AC65EBB0E593AAF976B2C2177 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5574170C20D85947E4D096E27F2FEC9A /* Build configuration list for PBXNativeTarget "Pods-LEGOToast_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2EA1FE980154BB79F3FB05B2133A6BEB /* Debug */,
+				87A0F3407EB9434F56B4987533558F84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8E3B090CFF2ED973D8E8489D30411B4B /* Build configuration list for PBXNativeTarget "Masonry" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEA1D99B7557B530C169B1AA2AC8C8C5 /* Debug */,
+				E25328AB5C27E2BFED5DB79FE4F58021 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E4CBB73AAC943F645E7FB65A18E05F38 /* Build configuration list for PBXNativeTarget "LEGOToast" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7AEC391A09E1D8ABA110D3548C38D459 /* Debug */,
+				A474BFFA5A1AF09CCB295541F5869F44 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
