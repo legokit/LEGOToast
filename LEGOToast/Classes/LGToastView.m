@@ -168,7 +168,13 @@
         _contentLabel = [[UILabel alloc]init];
         _contentLabel.numberOfLines = 0;
         _contentLabel.textColor = [UIColor whiteColor];
-        _contentLabel.font = [UIFont systemFontOfSize:18 weight:UIFontWeightSemibold];
+        if (@available(iOS 8.2, *)) {
+            _contentLabel.font = [UIFont systemFontOfSize:14 weight:UIFontWeightSemibold];
+        }
+        else {
+            _contentLabel.font = [UIFont systemFontOfSize:14];
+        }
+       
     }
     return _contentLabel;
 }
