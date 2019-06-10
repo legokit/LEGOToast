@@ -14,29 +14,38 @@
 @property (nonatomic, strong, readwrite) UIColor *defaultColor;  // 进度条背景颜色 default #000000
 @property (nonatomic, strong, readwrite) UIColor *fillColor;  // 进度条颜色 default #CFA972
 @property (nonatomic, assign, readwrite) CGFloat processValue;  // 进度 0 ~ 1
+@property (nonatomic, copy, readwrite) NSString *msg;
+@property (nonatomic, copy, readwrite) NSAttributedString *attributedString;
+@property (nonatomic, copy) NSString *endMsg;
+@property (nonatomic, copy) NSAttributedString *endAttributedString;
 
 @property (nonatomic, assign) BOOL automaticDismiss;  // 默认为YES，当processValue为1时自动dismiss
 
 + (instancetype)showByMessage:(NSString *)msg;
 
 + (instancetype)showByMessage:(NSString *)msg
-         positionType:(LGNoticePopuViewPosition)position;
+                 positionType:(LGNoticePopuViewPosition)position;
 
 + (instancetype)showByMessage:(NSString *)msg inView:(UIView *)view;
 
 + (instancetype)showByMessage:(NSString *)msg
-         positionType:(LGNoticePopuViewPosition)position inView:(UIView *)view;
+                 positionType:(LGNoticePopuViewPosition)position inView:(UIView *)view;
 
 + (instancetype)showByMessage:(NSString *)msg
-         positionType:(LGNoticePopuViewPosition)position
-              offsetY:(CGFloat)offsetY;
+                 positionType:(LGNoticePopuViewPosition)position
+                      offsetY:(CGFloat)offsetY;
 
 + (instancetype)showByAttributedString:(NSAttributedString *)attributedString
-                  positionType:(LGNoticePopuViewPosition)position;
+                          positionType:(LGNoticePopuViewPosition)position;
 
 + (instancetype)showByAttributedString:(NSAttributedString *)attributedString
-                  positionType:(LGNoticePopuViewPosition)position
-                       offsetY:(CGFloat)offsetY;
+                          positionType:(LGNoticePopuViewPosition)position
+                               offsetY:(CGFloat)offsetY;
+
++ (instancetype)showByAttributedString:(NSAttributedString *)attributedString
+                          positionType:(LGNoticePopuViewPosition)position
+                                inView:(UIView *)view
+                               offsetY:(CGFloat)offsetY;
 
 // 默认当 processValue = 1 时会dismiss
 - (void)dismissCompletion:(void (^ __nullable)(void))completion;

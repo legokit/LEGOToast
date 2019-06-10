@@ -25,21 +25,21 @@
 }
 
 + (instancetype)showByMessage:(NSString *)msg inView:(UIView *)view {
-    return [self.class showByMessage:msg positionType:LGNoticePopuViewPositionCenter];
+    return [self.class showByMessage:msg positionType:LGNoticePopuViewPositionCenter inView:view];
 }
 
 + (instancetype)showByMessage:(NSString *)msg
-         positionType:(LGNoticePopuViewPosition)position {
+                 positionType:(LGNoticePopuViewPosition)position {
     return [self.class showByMessage:msg positionType:position inView:LGToastViewWindow];
 }
 
 + (instancetype)showByMessage:(NSString *)msg
-         positionType:(LGNoticePopuViewPosition)position inView:(UIView *)view {
+                 positionType:(LGNoticePopuViewPosition)position inView:(UIView *)view {
     return [self.class showByMessage:msg positionType:position inView:view offsetY:0];
 }
 
 + (instancetype)showByMessage:(NSString *)msg
-         positionType:(LGNoticePopuViewPosition)position offsetY:(CGFloat)offsetY {
+                 positionType:(LGNoticePopuViewPosition)position offsetY:(CGFloat)offsetY {
     return [self.class showByMessage:msg positionType:position inView:LGToastViewWindow offsetY:offsetY];
 }
 
@@ -80,20 +80,20 @@
 }
 
 + (instancetype)showByAttributedString:(NSAttributedString *)attributedString
-                  positionType:(LGNoticePopuViewPosition)position {
+                          positionType:(LGNoticePopuViewPosition)position {
     return [self.class showByAttributedString:attributedString positionType:position inView:LGToastViewWindow offsetY:0];
 }
 
 + (instancetype)showByAttributedString:(NSAttributedString *)attributedString
-                  positionType:(LGNoticePopuViewPosition)position
-                       offsetY:(CGFloat)offsetY {
+                          positionType:(LGNoticePopuViewPosition)position
+                               offsetY:(CGFloat)offsetY {
     return [self.class showByAttributedString:attributedString positionType:position inView:LGToastViewWindow offsetY:offsetY];
 }
 
 + (instancetype)showByAttributedString:(NSAttributedString *)attributedString
-                  positionType:(LGNoticePopuViewPosition)position
-                        inView:(UIView *)view
-                       offsetY:(CGFloat)offsetY {
+                          positionType:(LGNoticePopuViewPosition)position
+                                inView:(UIView *)view
+                               offsetY:(CGFloat)offsetY {
     LGProgressToastView *toastView = [[LGProgressToastView alloc] initWithFrame:CGRectZero];
     [toastView.contentLabel setAttributedText:attributedString];
     toastView.alpha = 0;
@@ -104,6 +104,16 @@
     [self.class show:toastView];
     
     return toastView;
+}
+
+- (void)setMsg:(NSString *)msg {
+    _msg = msg;
+    self.contentLabel.text = msg;
+}
+
+- (void)setAttributedString:(NSAttributedString *)attributedString {
+    _attributedString = attributedString;
+    self.contentLabel.attributedText = attributedString;
 }
 
 + (void)show:(LGProgressToastView *)toastView {
@@ -119,7 +129,7 @@
 
 - (void)dismissCompletion:(void (^ __nullable)(void))completion {
     LGProgressToastView *toastView = self;
-    [UIView animateWithDuration:0.2 delay:0.2 options:UIViewAnimationOptionCurveEaseInOut animations:^{
+    [UIView animateWithDuration:0.2 delay:0.75 options:UIViewAnimationOptionCurveEaseInOut animations:^{
         [toastView setAlpha:0];
     } completion:^(BOOL finished) {
         if (finished) {
@@ -222,6 +232,16 @@
     _processValue = processValue;
     self.processView.processValue = processValue;
     if (processValue >= 1 && self.automaticDismiss) {
+        if (self.endMsg) {
+            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.25 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                self.contentLabel.text = self.endMsg; // 等待绘制时间
+            });
+        }
+        if (self.endAttributedString) {
+            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.25 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                self.contentLabel.attributedText = self.endAttributedString;  // 等待绘制时间
+            });
+        }
         [self dismissCompletion:nil];
     }
 }
