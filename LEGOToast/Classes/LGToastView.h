@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+@class LGToastGlobalParameter;
 
 typedef NS_ENUM(NSInteger, LGNoticePopuViewPosition) {
     LGNoticePopuViewPositionCenter,  // Center
@@ -42,3 +43,10 @@ typedef NS_ENUM(NSInteger, LGNoticePopuViewPosition) {
 
 @end
 
+@interface LGToastGlobalParameter : NSObject
+
+@property (nonatomic, strong) UIFont *font;  // 全局字体配置
+
++ (instancetype)shareManager;
+
+@end

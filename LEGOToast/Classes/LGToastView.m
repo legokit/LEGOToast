@@ -168,13 +168,17 @@
         _contentLabel = [[UILabel alloc]init];
         _contentLabel.numberOfLines = 0;
         _contentLabel.textColor = [UIColor whiteColor];
-        if (@available(iOS 8.2, *)) {
-            _contentLabel.font = [UIFont systemFontOfSize:14 weight:UIFontWeightSemibold];
+        if ([LGToastGlobalParameter shareManager].font) {
+            _contentLabel.font = [LGToastGlobalParameter shareManager].font;
         }
         else {
-            _contentLabel.font = [UIFont systemFontOfSize:14];
+            if (@available(iOS 8.2, *)) {
+                _contentLabel.font = [UIFont systemFontOfSize:14 weight:UIFontWeightSemibold];
+            }
+            else {
+                _contentLabel.font = [UIFont systemFontOfSize:14];
+            }
         }
-       
     }
     return _contentLabel;
 }
@@ -192,6 +196,20 @@
     gl.locations = @[@(0.0),@(1.0f)];
     [self.layer insertSublayer:gl below:self.contentLabel.layer];
     self.gl = gl;
+}
+
+@end
+
+@implementation LGToastGlobalParameter
+
+static LGToastGlobalParameter *shareManager = nil;
+
++ (instancetype)shareManager {
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        shareManager = [[LGToastGlobalParameter alloc] init];
+    });
+    return shareManager;
 }
 
 @end
