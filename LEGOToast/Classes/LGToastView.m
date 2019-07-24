@@ -62,6 +62,13 @@
          positionType:(LGNoticePopuViewPosition)position
                inView:(UIView *)view
               offsetY:(CGFloat)offsetY {
+    
+    for (UIView *subView in view.subviews) {
+        if ([subView isKindOfClass:[LGToastView class]]) {
+            [subView removeFromSuperview];
+        }
+    }
+    
     LGToastView *toastView = [[LGToastView alloc] initWithFrame:CGRectZero];
     [toastView.contentLabel setText:[NSString stringWithFormat:@"%@",msg]];
     toastView.alpha = 0;
@@ -74,7 +81,7 @@
         [toastView setAlpha:1];
     } completion:^(BOOL finished) {
         if (finished) {
-            [UIView animateWithDuration:0.2 delay:2 options:UIViewAnimationOptionCurveEaseInOut animations:^{
+            [UIView animateWithDuration:0.2 delay:1.5 options:UIViewAnimationOptionCurveEaseInOut animations:^{
                 [toastView setAlpha:0];
             } completion:^(BOOL finished) {
                 if (finished) {
@@ -83,6 +90,12 @@
             }];
         }
     }];
+    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        if (toastView && toastView.superview) {
+            [toastView removeFromSuperview];
+        }
+    });
 }
 
 + (void)showByAttributedString:(NSAttributedString *)attributedString
