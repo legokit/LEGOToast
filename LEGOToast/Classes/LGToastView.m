@@ -63,12 +63,6 @@
                inView:(UIView *)view
               offsetY:(CGFloat)offsetY {
     
-    for (UIView *subView in view.subviews) {
-        if ([subView isKindOfClass:[LGToastView class]]) {
-            [subView removeFromSuperview];
-        }
-    }
-    
     LGToastView *toastView = [[LGToastView alloc] initWithFrame:CGRectZero];
     [toastView.contentLabel setText:[NSString stringWithFormat:@"%@",msg]];
     toastView.alpha = 0;
