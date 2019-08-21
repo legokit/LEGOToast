@@ -24,6 +24,23 @@ pod 'LEGOToast'
 end
 
 ```
+
+```
+// 弹出一段文本
+[LGToastView showByMessage:@"message"];
+
+// 弹出一段富文本
+[LGToastView showByAttributedString:attributedText positionType:LGNoticePopuViewPositionCenter];
+
+// 弹出位置的枚举，支持自定义位置
+typedef NS_ENUM(NSInteger, LGNoticePopuViewPosition) {
+    LGNoticePopuViewPositionCenter,  /
+    LGNoticePopuViewPositionTop,
+    LGNoticePopuViewPositionBottom,
+    LGNoticePopuViewPositionCustom
+};
+```
+
 ```
 /**
  default position show center. inView is window.
