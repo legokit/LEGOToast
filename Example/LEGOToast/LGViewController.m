@@ -42,7 +42,7 @@
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    [LGToastView showByMessage:@"LEGOToastView文案" positionType:LGNoticePopuViewPositionCenter];
+    [LGToastView showByMessage:@"文案文案文案文案文案文案文案文案文案文案文案" positionType:LGNoticePopuViewPositionCenter];
     
 //    LGLineProgressToastView *toastView = [LGLineProgressToastView showByAttributedString:[[NSAttributedString alloc] initWithString:@"LGToastView文案"] positionType:0 offsetY:0];
 //    toastView.processValue = 0.0;

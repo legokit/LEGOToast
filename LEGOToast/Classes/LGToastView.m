@@ -49,10 +49,13 @@
         self.layer.masksToBounds = YES;
         [self addSubview:self.contentLabel];
         
-        // 根据 text 内容撑开 toast
         [self.contentLabel mas_makeConstraints:^(MASConstraintMaker *make) {
             make.center.equalTo(self);
             make.edges.mas_equalTo(UIEdgeInsetsMake(21, 57, 21, 57));
+//            make.top.offset(21);
+//            make.left.offset(57);
+//            make.bottom.offset(-21);
+//            make.right.offset(-57);
         }];
     }
     return self;
@@ -62,33 +65,34 @@
          positionType:(LGNoticePopuViewPosition)position
                inView:(UIView *)view
               offsetY:(CGFloat)offsetY {
-    
-    LGToastView *toastView = [[LGToastView alloc] initWithFrame:CGRectZero];
-    [toastView.contentLabel setText:[NSString stringWithFormat:@"%@",msg]];
-    toastView.alpha = 0;
-    toastView.positionType = position;
-    [view addSubview:toastView];
-    
-    [toastView setUpFrameWithoffsetY:offsetY];
-    
-    [UIView animateWithDuration:0.2 delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
-        [toastView setAlpha:1];
-    } completion:^(BOOL finished) {
-        if (finished) {
-            [UIView animateWithDuration:0.2 delay:1.5 options:UIViewAnimationOptionCurveEaseInOut animations:^{
-                [toastView setAlpha:0];
-            } completion:^(BOOL finished) {
-                if (finished) {
-                    [toastView removeFromSuperview];
-                }
-            }];
-        }
-    }];
-    
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        if (toastView && toastView.superview) {
-            [toastView removeFromSuperview];
-        }
+    dispatch_async(dispatch_get_main_queue(), ^{
+        LGToastView *toastView = [[LGToastView alloc] initWithFrame:CGRectZero];
+        [toastView.contentLabel setText:[NSString stringWithFormat:@"%@",msg]];
+        toastView.alpha = 0;
+        toastView.positionType = position;
+        [view addSubview:toastView];
+        
+        [toastView setUpFrameWithoffsetY:offsetY];
+        
+        [UIView animateWithDuration:0.2 delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
+            [toastView setAlpha:1];
+        } completion:^(BOOL finished) {
+            if (finished) {
+                [UIView animateWithDuration:0.2 delay:1.5 options:UIViewAnimationOptionCurveEaseInOut animations:^{
+                    [toastView setAlpha:0];
+                } completion:^(BOOL finished) {
+                    if (finished) {
+                        [toastView removeFromSuperview];
+                    }
+                }];
+            }
+        }];
+        
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            if (toastView && toastView.superview) {
+                [toastView removeFromSuperview];
+            }
+        });
     });
 }
 
@@ -107,27 +111,29 @@
                   positionType:(LGNoticePopuViewPosition)position
                         inView:(UIView *)view
                        offsetY:(CGFloat)offsetY {
-    LGToastView *toastView = [[LGToastView alloc] initWithFrame:CGRectZero];
-    [toastView.contentLabel setAttributedText:attributedString];
-    toastView.alpha = 0;
-    toastView.positionType = position;
-    [view addSubview:toastView];
-    
-    [toastView setUpFrameWithoffsetY:offsetY];
-    
-    [UIView animateWithDuration:0.2 delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
-        [toastView setAlpha:1];
-    } completion:^(BOOL finished) {
-        if (finished) {
-            [UIView animateWithDuration:0.2 delay:2 options:UIViewAnimationOptionCurveEaseInOut animations:^{
-                [toastView setAlpha:0];
-            } completion:^(BOOL finished) {
-                if (finished) {
-                    [toastView removeFromSuperview];
-                }
-            }];
-        }
-    }];
+    dispatch_async(dispatch_get_main_queue(), ^{
+            LGToastView *toastView = [[LGToastView alloc] initWithFrame:CGRectZero];
+        [toastView.contentLabel setAttributedText:attributedString];
+        toastView.alpha = 0;
+        toastView.positionType = position;
+        [view addSubview:toastView];
+        
+        [toastView setUpFrameWithoffsetY:offsetY];
+        
+        [UIView animateWithDuration:0.2 delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
+            [toastView setAlpha:1];
+        } completion:^(BOOL finished) {
+            if (finished) {
+                [UIView animateWithDuration:0.2 delay:2 options:UIViewAnimationOptionCurveEaseInOut animations:^{
+                    [toastView setAlpha:0];
+                } completion:^(BOOL finished) {
+                    if (finished) {
+                        [toastView removeFromSuperview];
+                    }
+                }];
+            }
+        }];
+    });
 }
 
 - (void)setUpFrameWithoffsetY:(CGFloat)offsetY {
