@@ -1,10 +1,5 @@
 # LEGOToast
 
-[![CI Status](https://img.shields.io/travis/564008993@qq.com/LEGOToast.svg?style=flat)](https://travis-ci.org/564008993@qq.com/LEGOToast)
-[![Version](https://img.shields.io/cocoapods/v/LEGOToast.svg?style=flat)](https://cocoapods.org/pods/LEGOToast)
-[![License](https://img.shields.io/cocoapods/l/LEGOToast.svg?style=flat)](https://cocoapods.org/pods/LEGOToast)
-[![Platform](https://img.shields.io/cocoapods/p/LEGOToast.svg?style=flat)](https://cocoapods.org/pods/LEGOToast)
-
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
@@ -16,8 +11,34 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 LEGOToast is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
-```ruby
+### podfile
+
+To integrate LEGOToast into your Xcode project using CocoaPods, specify it in your Podfile:
+
+```
+source 'https://github.com/legokit/Specs.git'
+platform :ios, '8.0'
+
+target 'TargetName' do
 pod 'LEGOToast'
+end
+
+```
+
+```
+// 弹出一段文本
+[LGToastView showByMessage:@"message"];
+
+// 弹出一段富文本
+[LGToastView showByAttributedString:attributedText positionType:LGNoticePopuViewPositionCenter];
+
+// 弹出位置的枚举，支持自定义位置
+typedef NS_ENUM(NSInteger, LGNoticePopuViewPosition) {
+    LGNoticePopuViewPositionCenter,  /
+    LGNoticePopuViewPositionTop,
+    LGNoticePopuViewPositionBottom,
+    LGNoticePopuViewPositionCustom
+};
 ```
 
 ```
