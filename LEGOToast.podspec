@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'LEGOToast'
-  s.version          = '0.1.5'
+  s.version          = '0.1.6'
   s.summary          = 'A short description of LEGOToast.'
 
 # This description is used to generate tags and improve search results.
@@ -33,6 +33,7 @@ TODO: Add long description of the pod here.
   s.source_files = 'LEGOToast/Classes/**/*'
   
   s.dependency 'Masonry'
+
   
   # s.resource_bundles = {
   #   'LEGOToast' => ['LEGOToast/Assets/*.png']

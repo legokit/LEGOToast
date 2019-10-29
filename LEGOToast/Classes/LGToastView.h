@@ -46,6 +46,7 @@ typedef NS_ENUM(NSInteger, LGNoticePopuViewPosition) {
 @interface LGToastGlobalParameter : NSObject
 
 @property (nonatomic, strong) UIFont *font;  // 全局字体配置
+@property (nonatomic, assign) NSTimeInterval interval;
 
 + (instancetype)shareManager;
 

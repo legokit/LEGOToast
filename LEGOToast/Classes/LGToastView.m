@@ -77,15 +77,12 @@
         [UIView animateWithDuration:0.2 delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
             [toastView setAlpha:1];
         } completion:^(BOOL finished) {
-            if (finished) {
-                [UIView animateWithDuration:0.2 delay:1.5 options:UIViewAnimationOptionCurveEaseInOut animations:^{
-                    [toastView setAlpha:0];
-                } completion:^(BOOL finished) {
-                    if (finished) {
-                        [toastView removeFromSuperview];
-                    }
-                }];
-            }
+            NSTimeInterval delay = [LGToastGlobalParameter shareManager].interval ? [LGToastGlobalParameter shareManager].interval : 1;
+            [UIView animateWithDuration:0.2 delay:delay options:UIViewAnimationOptionCurveEaseInOut animations:^{
+                [toastView setAlpha:0];
+            } completion:^(BOOL finished) {
+                [toastView removeFromSuperview];
+            }];
         }];
         
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
