@@ -51,11 +51,7 @@
         
         [self.contentLabel mas_makeConstraints:^(MASConstraintMaker *make) {
             make.center.equalTo(self);
-            make.edges.mas_equalTo(UIEdgeInsetsMake(21, 57, 21, 57));
-//            make.top.offset(21);
-//            make.left.offset(57);
-//            make.bottom.offset(-21);
-//            make.right.offset(-57);
+            make.edges.mas_equalTo(UIEdgeInsetsMake(21, 37, 21, 37));
         }];
     }
     return self;
@@ -67,7 +63,15 @@
               offsetY:(CGFloat)offsetY {
     dispatch_async(dispatch_get_main_queue(), ^{
         LGToastView *toastView = [[LGToastView alloc] initWithFrame:CGRectZero];
-        [toastView.contentLabel setText:[NSString stringWithFormat:@"%@",msg]];
+        
+        NSMutableAttributedString *attrStr = [[NSMutableAttributedString alloc] initWithString:msg attributes:nil];
+        NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc] init];
+        paragraphStyle.lineSpacing = 5; // 行间距
+        paragraphStyle.alignment = NSTextAlignmentCenter;
+        NSRange range = NSMakeRange(0, [msg length]);
+        [attrStr addAttribute:NSParagraphStyleAttributeName value:paragraphStyle range:range];
+        toastView.contentLabel.attributedText = attrStr;
+        
         toastView.alpha = 0;
         toastView.positionType = position;
         [view addSubview:toastView];
