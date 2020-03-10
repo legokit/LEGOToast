@@ -178,6 +178,7 @@
         _contentLabel = [[UILabel alloc]init];
         _contentLabel.numberOfLines = 0;
         _contentLabel.textColor = [UIColor whiteColor];
+        _contentLabel.textAlignment = NSTextAlignmentCenter;
         if ([LGToastGlobalParameter shareManager].font) {
             _contentLabel.font = [LGToastGlobalParameter shareManager].font;
         }
